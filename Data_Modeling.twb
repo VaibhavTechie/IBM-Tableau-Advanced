@@ -1,0 +1,1706 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Country+' inline='true' name='federated.0l2fayn0vjixhr1h7v26c1ttnklv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Country' name='textscan.0u9nzky1scqcak17l8y9e1sxxwt0'>
+            <connection class='textscan' directory='D:/REPOS/IBM-Tableau-Advanced' filename='Country.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0u9nzky1scqcak17l8y9e1sxxwt0' name='Country.csv' table='[Country#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='CountryCode' ordinal='0' />
+            <column datatype='string' name='ShortName' ordinal='1' />
+            <column datatype='string' name='TableName' ordinal='2' />
+            <column datatype='string' name='LongName' ordinal='3' />
+            <column datatype='string' name='Alpha2Code' ordinal='4' />
+            <column datatype='string' name='CurrencyUnit' ordinal='5' />
+            <column datatype='string' name='SpecialNotes' ordinal='6' />
+            <column datatype='string' name='Region' ordinal='7' />
+            <column datatype='string' name='IncomeGroup' ordinal='8' />
+            <column datatype='string' name='Wb2Code' ordinal='9' />
+            <column datatype='string' name='NationalAccountsBaseYear' ordinal='10' />
+            <column datatype='integer' name='NationalAccountsReferenceYear' ordinal='11' />
+            <column datatype='string' name='SnaPriceValuation' ordinal='12' />
+            <column datatype='string' name='LendingCategory' ordinal='13' />
+            <column datatype='string' name='OtherGroups' ordinal='14' />
+            <column datatype='string' name='SystemOfNationalAccounts' ordinal='15' />
+            <column datatype='string' name='AlternativeConversionFactor' ordinal='16' />
+            <column datatype='string' name='PppSurveyYear' ordinal='17' />
+            <column datatype='string' name='BalanceOfPaymentsManualInUse' ordinal='18' />
+            <column datatype='string' name='ExternalDebtReportingStatus' ordinal='19' />
+            <column datatype='string' name='SystemOfTrade' ordinal='20' />
+            <column datatype='string' name='GovernmentAccountingConcept' ordinal='21' />
+            <column datatype='string' name='ImfDataDisseminationStandard' ordinal='22' />
+            <column datatype='integer' name='LatestPopulationCensus' ordinal='23' />
+            <column datatype='string' name='LatestHouseholdSurvey' ordinal='24' />
+            <column datatype='string' name='SourceOfMostRecentIncomeAndExpenditureData' ordinal='25' />
+            <column datatype='string' name='VitalRegistrationComplete' ordinal='26' />
+            <column datatype='string' name='LatestAgriculturalCensus' ordinal='27' />
+            <column datatype='real' name='LatestIndustrialData' ordinal='28' />
+            <column datatype='real' name='LatestTradeData' ordinal='29' />
+            <column datatype='real' name='LatestWaterWithdrawalData' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0u9nzky1scqcak17l8y9e1sxxwt0' name='Country.csv' table='[Country#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='CountryCode' ordinal='0' />
+              <column datatype='string' name='ShortName' ordinal='1' />
+              <column datatype='string' name='TableName' ordinal='2' />
+              <column datatype='string' name='LongName' ordinal='3' />
+              <column datatype='string' name='Alpha2Code' ordinal='4' />
+              <column datatype='string' name='CurrencyUnit' ordinal='5' />
+              <column datatype='string' name='SpecialNotes' ordinal='6' />
+              <column datatype='string' name='Region' ordinal='7' />
+              <column datatype='string' name='IncomeGroup' ordinal='8' />
+              <column datatype='string' name='Wb2Code' ordinal='9' />
+              <column datatype='string' name='NationalAccountsBaseYear' ordinal='10' />
+              <column datatype='integer' name='NationalAccountsReferenceYear' ordinal='11' />
+              <column datatype='string' name='SnaPriceValuation' ordinal='12' />
+              <column datatype='string' name='LendingCategory' ordinal='13' />
+              <column datatype='string' name='OtherGroups' ordinal='14' />
+              <column datatype='string' name='SystemOfNationalAccounts' ordinal='15' />
+              <column datatype='string' name='AlternativeConversionFactor' ordinal='16' />
+              <column datatype='string' name='PppSurveyYear' ordinal='17' />
+              <column datatype='string' name='BalanceOfPaymentsManualInUse' ordinal='18' />
+              <column datatype='string' name='ExternalDebtReportingStatus' ordinal='19' />
+              <column datatype='string' name='SystemOfTrade' ordinal='20' />
+              <column datatype='string' name='GovernmentAccountingConcept' ordinal='21' />
+              <column datatype='string' name='ImfDataDisseminationStandard' ordinal='22' />
+              <column datatype='integer' name='LatestPopulationCensus' ordinal='23' />
+              <column datatype='string' name='LatestHouseholdSurvey' ordinal='24' />
+              <column datatype='string' name='SourceOfMostRecentIncomeAndExpenditureData' ordinal='25' />
+              <column datatype='string' name='VitalRegistrationComplete' ordinal='26' />
+              <column datatype='string' name='LatestAgriculturalCensus' ordinal='27' />
+              <column datatype='real' name='LatestIndustrialData' ordinal='28' />
+              <column datatype='real' name='LatestTradeData' ordinal='29' />
+              <column datatype='real' name='LatestWaterWithdrawalData' ordinal='30' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0u9nzky1scqcak17l8y9e1sxxwt0' name='Indicators_small.csv' table='[Indicators_small#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='CountryName' ordinal='0' />
+              <column datatype='string' name='CountryCode' ordinal='1' />
+              <column datatype='string' name='IndicatorName' ordinal='2' />
+              <column datatype='string' name='IndicatorCode' ordinal='3' />
+              <column datatype='integer' name='Year' ordinal='4' />
+              <column datatype='real' name='Value' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Alpha2Code]' value='[Country.csv].[Alpha2Code]' />
+          <map key='[AlternativeConversionFactor]' value='[Country.csv].[AlternativeConversionFactor]' />
+          <map key='[BalanceOfPaymentsManualInUse]' value='[Country.csv].[BalanceOfPaymentsManualInUse]' />
+          <map key='[CountryCode (Indicators_small.csv)]' value='[Indicators_small.csv].[CountryCode]' />
+          <map key='[CountryCode]' value='[Country.csv].[CountryCode]' />
+          <map key='[CountryName]' value='[Indicators_small.csv].[CountryName]' />
+          <map key='[CurrencyUnit]' value='[Country.csv].[CurrencyUnit]' />
+          <map key='[ExternalDebtReportingStatus]' value='[Country.csv].[ExternalDebtReportingStatus]' />
+          <map key='[GovernmentAccountingConcept]' value='[Country.csv].[GovernmentAccountingConcept]' />
+          <map key='[ImfDataDisseminationStandard]' value='[Country.csv].[ImfDataDisseminationStandard]' />
+          <map key='[IncomeGroup]' value='[Country.csv].[IncomeGroup]' />
+          <map key='[IndicatorCode]' value='[Indicators_small.csv].[IndicatorCode]' />
+          <map key='[IndicatorName]' value='[Indicators_small.csv].[IndicatorName]' />
+          <map key='[LatestAgriculturalCensus]' value='[Country.csv].[LatestAgriculturalCensus]' />
+          <map key='[LatestHouseholdSurvey]' value='[Country.csv].[LatestHouseholdSurvey]' />
+          <map key='[LatestIndustrialData]' value='[Country.csv].[LatestIndustrialData]' />
+          <map key='[LatestPopulationCensus]' value='[Country.csv].[LatestPopulationCensus]' />
+          <map key='[LatestTradeData]' value='[Country.csv].[LatestTradeData]' />
+          <map key='[LatestWaterWithdrawalData]' value='[Country.csv].[LatestWaterWithdrawalData]' />
+          <map key='[LendingCategory]' value='[Country.csv].[LendingCategory]' />
+          <map key='[LongName]' value='[Country.csv].[LongName]' />
+          <map key='[NationalAccountsBaseYear]' value='[Country.csv].[NationalAccountsBaseYear]' />
+          <map key='[NationalAccountsReferenceYear]' value='[Country.csv].[NationalAccountsReferenceYear]' />
+          <map key='[OtherGroups]' value='[Country.csv].[OtherGroups]' />
+          <map key='[PppSurveyYear]' value='[Country.csv].[PppSurveyYear]' />
+          <map key='[Region]' value='[Country.csv].[Region]' />
+          <map key='[ShortName]' value='[Country.csv].[ShortName]' />
+          <map key='[SnaPriceValuation]' value='[Country.csv].[SnaPriceValuation]' />
+          <map key='[SourceOfMostRecentIncomeAndExpenditureData]' value='[Country.csv].[SourceOfMostRecentIncomeAndExpenditureData]' />
+          <map key='[SpecialNotes]' value='[Country.csv].[SpecialNotes]' />
+          <map key='[SystemOfNationalAccounts]' value='[Country.csv].[SystemOfNationalAccounts]' />
+          <map key='[SystemOfTrade]' value='[Country.csv].[SystemOfTrade]' />
+          <map key='[TableName]' value='[Country.csv].[TableName]' />
+          <map key='[Value]' value='[Indicators_small.csv].[Value]' />
+          <map key='[VitalRegistrationComplete]' value='[Country.csv].[VitalRegistrationComplete]' />
+          <map key='[Wb2Code]' value='[Country.csv].[Wb2Code]' />
+          <map key='[Year]' value='[Indicators_small.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountryCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountryCode]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>CountryCode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShortName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ShortName]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>ShortName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TableName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TableName]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>TableName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LongName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LongName]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LongName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alpha2Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Alpha2Code]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>Alpha2Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrencyUnit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CurrencyUnit]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>CurrencyUnit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpecialNotes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SpecialNotes]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>SpecialNotes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IncomeGroup]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>IncomeGroup</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wb2Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wb2Code]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>Wb2Code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NationalAccountsBaseYear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NationalAccountsBaseYear]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>NationalAccountsBaseYear</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NationalAccountsReferenceYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NationalAccountsReferenceYear]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>NationalAccountsReferenceYear</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SnaPriceValuation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SnaPriceValuation]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>SnaPriceValuation</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LendingCategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LendingCategory]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LendingCategory</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OtherGroups</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OtherGroups]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>OtherGroups</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SystemOfNationalAccounts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SystemOfNationalAccounts]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>SystemOfNationalAccounts</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AlternativeConversionFactor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AlternativeConversionFactor]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>AlternativeConversionFactor</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PppSurveyYear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PppSurveyYear]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>PppSurveyYear</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BalanceOfPaymentsManualInUse</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BalanceOfPaymentsManualInUse]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>BalanceOfPaymentsManualInUse</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExternalDebtReportingStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExternalDebtReportingStatus]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>ExternalDebtReportingStatus</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SystemOfTrade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SystemOfTrade]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>SystemOfTrade</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GovernmentAccountingConcept</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GovernmentAccountingConcept]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>GovernmentAccountingConcept</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ImfDataDisseminationStandard</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ImfDataDisseminationStandard]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>ImfDataDisseminationStandard</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LatestPopulationCensus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LatestPopulationCensus]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LatestPopulationCensus</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LatestHouseholdSurvey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LatestHouseholdSurvey]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LatestHouseholdSurvey</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SourceOfMostRecentIncomeAndExpenditureData</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SourceOfMostRecentIncomeAndExpenditureData]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>SourceOfMostRecentIncomeAndExpenditureData</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VitalRegistrationComplete</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VitalRegistrationComplete]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>VitalRegistrationComplete</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LatestAgriculturalCensus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LatestAgriculturalCensus]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LatestAgriculturalCensus</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LatestIndustrialData</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LatestIndustrialData]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LatestIndustrialData</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LatestTradeData</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LatestTradeData]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LatestTradeData</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LatestWaterWithdrawalData</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LatestWaterWithdrawalData]</local-name>
+            <parent-name>[Country.csv]</parent-name>
+            <remote-alias>LatestWaterWithdrawalData</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountryName]</local-name>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias>CountryName</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountryCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountryCode (Indicators_small.csv)]</local-name>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias>CountryCode</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndicatorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IndicatorName]</local-name>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias>IndicatorName</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndicatorCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IndicatorCode]</local-name>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias>IndicatorCode</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Indicators_small.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Alternative Conversion Factor' datatype='string' name='[AlternativeConversionFactor]' role='dimension' type='nominal' />
+      <column caption='Balance Of Payments Manual In Use' datatype='string' name='[BalanceOfPaymentsManualInUse]' role='dimension' type='nominal' />
+      <column caption='CountryCode (Indicators small.csv)' datatype='string' name='[CountryCode (Indicators_small.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[CountryCode]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Name' datatype='string' name='[CountryName]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Currency Unit' datatype='string' name='[CurrencyUnit]' role='dimension' type='nominal' />
+      <column caption='External Debt Reporting Status' datatype='string' name='[ExternalDebtReportingStatus]' role='dimension' type='nominal' />
+      <column caption='Government Accounting Concept' datatype='string' name='[GovernmentAccountingConcept]' role='dimension' type='nominal' />
+      <column caption='Imf Data Dissemination Standard' datatype='string' name='[ImfDataDisseminationStandard]' role='dimension' type='nominal' />
+      <column caption='Income Group' datatype='string' name='[IncomeGroup]' role='dimension' type='nominal' />
+      <column caption='Indicator Code' datatype='string' name='[IndicatorCode]' role='dimension' type='nominal' />
+      <column caption='Indicator Name' datatype='string' name='[IndicatorName]' role='dimension' type='nominal' />
+      <column caption='Latest Agricultural Census' datatype='string' name='[LatestAgriculturalCensus]' role='dimension' type='nominal' />
+      <column caption='Latest Household Survey' datatype='string' name='[LatestHouseholdSurvey]' role='dimension' type='nominal' />
+      <column caption='Latest Industrial Data' datatype='real' name='[LatestIndustrialData]' role='measure' type='quantitative' />
+      <column caption='Latest Population Census' datatype='integer' name='[LatestPopulationCensus]' role='measure' type='quantitative' />
+      <column caption='Latest Trade Data' datatype='real' name='[LatestTradeData]' role='measure' type='quantitative' />
+      <column caption='Latest Water Withdrawal Data' datatype='real' name='[LatestWaterWithdrawalData]' role='measure' type='quantitative' />
+      <column caption='Lending Category' datatype='string' name='[LendingCategory]' role='dimension' type='nominal' />
+      <column caption='Long Name' datatype='string' name='[LongName]' role='dimension' type='nominal' />
+      <column caption='National Accounts Base Year' datatype='string' name='[NationalAccountsBaseYear]' role='dimension' type='nominal' />
+      <column caption='National Accounts Reference Year' datatype='integer' name='[NationalAccountsReferenceYear]' role='dimension' type='quantitative' />
+      <column caption='Other Groups' datatype='string' name='[OtherGroups]' role='dimension' type='nominal' />
+      <column caption='Ppp Survey Year' datatype='string' name='[PppSurveyYear]' role='dimension' type='nominal' />
+      <column caption='Short Name' datatype='string' name='[ShortName]' role='dimension' type='nominal' />
+      <column caption='Sna Price Valuation' datatype='string' name='[SnaPriceValuation]' role='dimension' type='nominal' />
+      <column caption='Source Of Most Recent Income And Expenditure Data' datatype='string' name='[SourceOfMostRecentIncomeAndExpenditureData]' role='dimension' type='nominal' />
+      <column caption='Special Notes' datatype='string' name='[SpecialNotes]' role='dimension' type='nominal' />
+      <column caption='System Of National Accounts' datatype='string' name='[SystemOfNationalAccounts]' role='dimension' type='nominal' />
+      <column caption='System Of Trade' datatype='string' name='[SystemOfTrade]' role='dimension' type='nominal' />
+      <column caption='Table Name' datatype='string' name='[TableName]' role='dimension' type='nominal' />
+      <column caption='Vital Registration Complete' datatype='string' name='[VitalRegistrationComplete]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Country.csv' datatype='table' name='[__tableau_internal_object_id__].[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Indicators_small.csv' datatype='table' name='[__tableau_internal_object_id__].[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/vaibh/AppData/Local/Temp/TableauTemp/#TableauTemp_03fiwo21r4endm1bh9tyr0bwrg0c.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/07/2024 08:31:26 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9' table='[Extract].[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9' table='[Extract].[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]' type='table' />
+            <relation name='Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141' table='[Extract].[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Alpha2Code]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[Alpha2Code]' />
+            <map key='[AlternativeConversionFactor]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[AlternativeConversionFactor]' />
+            <map key='[BalanceOfPaymentsManualInUse]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[BalanceOfPaymentsManualInUse]' />
+            <map key='[CountryCode (Indicators_small.csv)]' value='[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141].[CountryCode]' />
+            <map key='[CountryCode]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[CountryCode]' />
+            <map key='[CountryName]' value='[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141].[CountryName]' />
+            <map key='[CurrencyUnit]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[CurrencyUnit]' />
+            <map key='[ExternalDebtReportingStatus]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[ExternalDebtReportingStatus]' />
+            <map key='[GovernmentAccountingConcept]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[GovernmentAccountingConcept]' />
+            <map key='[ImfDataDisseminationStandard]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[ImfDataDisseminationStandard]' />
+            <map key='[IncomeGroup]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[IncomeGroup]' />
+            <map key='[IndicatorCode]' value='[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141].[IndicatorCode]' />
+            <map key='[IndicatorName]' value='[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141].[IndicatorName]' />
+            <map key='[LatestAgriculturalCensus]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LatestAgriculturalCensus]' />
+            <map key='[LatestHouseholdSurvey]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LatestHouseholdSurvey]' />
+            <map key='[LatestIndustrialData]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LatestIndustrialData]' />
+            <map key='[LatestPopulationCensus]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LatestPopulationCensus]' />
+            <map key='[LatestTradeData]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LatestTradeData]' />
+            <map key='[LatestWaterWithdrawalData]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LatestWaterWithdrawalData]' />
+            <map key='[LendingCategory]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LendingCategory]' />
+            <map key='[LongName]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[LongName]' />
+            <map key='[NationalAccountsBaseYear]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[NationalAccountsBaseYear]' />
+            <map key='[NationalAccountsReferenceYear]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[NationalAccountsReferenceYear]' />
+            <map key='[OtherGroups]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[OtherGroups]' />
+            <map key='[PppSurveyYear]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[PppSurveyYear]' />
+            <map key='[Region]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[Region]' />
+            <map key='[ShortName]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[ShortName]' />
+            <map key='[SnaPriceValuation]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[SnaPriceValuation]' />
+            <map key='[SourceOfMostRecentIncomeAndExpenditureData]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[SourceOfMostRecentIncomeAndExpenditureData]' />
+            <map key='[SpecialNotes]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[SpecialNotes]' />
+            <map key='[SystemOfNationalAccounts]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[SystemOfNationalAccounts]' />
+            <map key='[SystemOfTrade]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[SystemOfTrade]' />
+            <map key='[TableName]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[TableName]' />
+            <map key='[Value]' value='[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141].[Value]' />
+            <map key='[VitalRegistrationComplete]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[VitalRegistrationComplete]' />
+            <map key='[Wb2Code]' value='[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9].[Wb2Code]' />
+            <map key='[Year]' value='[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141].[Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CountryCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CountryCode]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>CountryCode</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ShortName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ShortName]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>ShortName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TableName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TableName]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>TableName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LongName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LongName]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LongName</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alpha2Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Alpha2Code]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>Alpha2Code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>245</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CurrencyUnit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CurrencyUnit]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>CurrencyUnit</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>150</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SpecialNotes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SpecialNotes]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>SpecialNotes</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>150</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IncomeGroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IncomeGroup]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>IncomeGroup</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wb2Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Wb2Code]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>Wb2Code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NationalAccountsBaseYear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NationalAccountsBaseYear]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>NationalAccountsBaseYear</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NationalAccountsReferenceYear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NationalAccountsReferenceYear]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>NationalAccountsReferenceYear</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Country.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SnaPriceValuation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SnaPriceValuation]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>SnaPriceValuation</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LendingCategory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LendingCategory]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LendingCategory</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OtherGroups</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OtherGroups]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>OtherGroups</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SystemOfNationalAccounts</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SystemOfNationalAccounts]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>SystemOfNationalAccounts</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AlternativeConversionFactor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AlternativeConversionFactor]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>AlternativeConversionFactor</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PppSurveyYear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PppSurveyYear]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>PppSurveyYear</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BalanceOfPaymentsManualInUse</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BalanceOfPaymentsManualInUse]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>BalanceOfPaymentsManualInUse</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExternalDebtReportingStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ExternalDebtReportingStatus]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>ExternalDebtReportingStatus</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SystemOfTrade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SystemOfTrade]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>SystemOfTrade</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GovernmentAccountingConcept</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GovernmentAccountingConcept]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>GovernmentAccountingConcept</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ImfDataDisseminationStandard</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ImfDataDisseminationStandard]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>ImfDataDisseminationStandard</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LatestPopulationCensus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LatestPopulationCensus]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LatestPopulationCensus</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Country.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LatestHouseholdSurvey</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LatestHouseholdSurvey]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LatestHouseholdSurvey</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SourceOfMostRecentIncomeAndExpenditureData</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SourceOfMostRecentIncomeAndExpenditureData]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>SourceOfMostRecentIncomeAndExpenditureData</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VitalRegistrationComplete</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[VitalRegistrationComplete]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>VitalRegistrationComplete</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LatestAgriculturalCensus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LatestAgriculturalCensus]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LatestAgriculturalCensus</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LatestIndustrialData</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LatestIndustrialData]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LatestIndustrialData</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Country.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LatestTradeData</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LatestTradeData]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LatestTradeData</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Country.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LatestWaterWithdrawalData</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LatestWaterWithdrawalData]</local-name>
+              <parent-name>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</parent-name>
+              <remote-alias>LatestWaterWithdrawalData</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Country.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CountryName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CountryName]</local-name>
+              <parent-name>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</parent-name>
+              <remote-alias>CountryName</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Indicators_small.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>454</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CountryCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CountryCode (Indicators_small.csv)]</local-name>
+              <parent-name>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</parent-name>
+              <remote-alias>CountryCode</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Indicators_small.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>454</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IndicatorName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IndicatorName]</local-name>
+              <parent-name>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</parent-name>
+              <remote-alias>IndicatorName</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Indicators_small.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2822</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IndicatorCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IndicatorCode]</local-name>
+              <parent-name>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</parent-name>
+              <remote-alias>IndicatorCode</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Indicators_small.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2822</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Indicators_small.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Indicators_small.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115329</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Country.csv' id='Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9'>
+            <properties context=''>
+              <relation connection='textscan.0u9nzky1scqcak17l8y9e1sxxwt0' name='Country.csv' table='[Country#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='CountryCode' ordinal='0' />
+                  <column datatype='string' name='ShortName' ordinal='1' />
+                  <column datatype='string' name='TableName' ordinal='2' />
+                  <column datatype='string' name='LongName' ordinal='3' />
+                  <column datatype='string' name='Alpha2Code' ordinal='4' />
+                  <column datatype='string' name='CurrencyUnit' ordinal='5' />
+                  <column datatype='string' name='SpecialNotes' ordinal='6' />
+                  <column datatype='string' name='Region' ordinal='7' />
+                  <column datatype='string' name='IncomeGroup' ordinal='8' />
+                  <column datatype='string' name='Wb2Code' ordinal='9' />
+                  <column datatype='string' name='NationalAccountsBaseYear' ordinal='10' />
+                  <column datatype='integer' name='NationalAccountsReferenceYear' ordinal='11' />
+                  <column datatype='string' name='SnaPriceValuation' ordinal='12' />
+                  <column datatype='string' name='LendingCategory' ordinal='13' />
+                  <column datatype='string' name='OtherGroups' ordinal='14' />
+                  <column datatype='string' name='SystemOfNationalAccounts' ordinal='15' />
+                  <column datatype='string' name='AlternativeConversionFactor' ordinal='16' />
+                  <column datatype='string' name='PppSurveyYear' ordinal='17' />
+                  <column datatype='string' name='BalanceOfPaymentsManualInUse' ordinal='18' />
+                  <column datatype='string' name='ExternalDebtReportingStatus' ordinal='19' />
+                  <column datatype='string' name='SystemOfTrade' ordinal='20' />
+                  <column datatype='string' name='GovernmentAccountingConcept' ordinal='21' />
+                  <column datatype='string' name='ImfDataDisseminationStandard' ordinal='22' />
+                  <column datatype='integer' name='LatestPopulationCensus' ordinal='23' />
+                  <column datatype='string' name='LatestHouseholdSurvey' ordinal='24' />
+                  <column datatype='string' name='SourceOfMostRecentIncomeAndExpenditureData' ordinal='25' />
+                  <column datatype='string' name='VitalRegistrationComplete' ordinal='26' />
+                  <column datatype='string' name='LatestAgriculturalCensus' ordinal='27' />
+                  <column datatype='real' name='LatestIndustrialData' ordinal='28' />
+                  <column datatype='real' name='LatestTradeData' ordinal='29' />
+                  <column datatype='real' name='LatestWaterWithdrawalData' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9' table='[Extract].[Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9]' type='table' />
+            </properties>
+          </object>
+          <object caption='Indicators_small.csv' id='Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141'>
+            <properties context=''>
+              <relation connection='textscan.0u9nzky1scqcak17l8y9e1sxxwt0' name='Indicators_small.csv' table='[Indicators_small#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='CountryName' ordinal='0' />
+                  <column datatype='string' name='CountryCode' ordinal='1' />
+                  <column datatype='string' name='IndicatorName' ordinal='2' />
+                  <column datatype='string' name='IndicatorCode' ordinal='3' />
+                  <column datatype='integer' name='Year' ordinal='4' />
+                  <column datatype='real' name='Value' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141' table='[Extract].[Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[CountryCode]' />
+              <expression op='[CountryCode (Indicators_small.csv)]' />
+            </expression>
+            <first-end-point object-id='Country.csv_1FAB2EE06E474B4AAAA47B03767B15D9' unique-key='true' />
+            <second-end-point object-id='Indicators_small.csv_B9D8A66EA6F4453E9B3DC6812BC94141' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Country+' name='federated.0l2fayn0vjixhr1h7v26c1ttnklv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0l2fayn0vjixhr1h7v26c1ttnklv'>
+            <column caption='Country Name' datatype='string' name='[CountryName]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Latest Population Census' datatype='integer' name='[LatestPopulationCensus]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[CountryName]' derivation='None' name='[none:CountryName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LatestPopulationCensus]' derivation='Sum' name='[sum:LatestPopulationCensus:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[none:Region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Region:nk]' />
+              <groupfilter function='member' level='[none:Region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[sum:LatestPopulationCensus:qk]' included-values='in-range'>
+            <min>1943</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[none:Region:nk]</column>
+            <column>[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[sum:LatestPopulationCensus:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0l2fayn0vjixhr1h7v26c1ttnklv].[none:Region:nk] / [federated.0l2fayn0vjixhr1h7v26c1ttnklv].[none:CountryName:nk])</rows>
+        <cols>[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[sum:LatestPopulationCensus:qk]</cols>
+      </table>
+      <simple-id uuid='{F67A549A-8FBF-4AC2-96C6-0D3D60A7FA55}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[none:CountryName:nk]</field>
+            <field>[federated.0l2fayn0vjixhr1h7v26c1ttnklv].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{31784F12-6F81-48F8-8194-8CDD10CEDA53}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
